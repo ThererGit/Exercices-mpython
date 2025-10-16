@@ -9,6 +9,9 @@ ROTARY_ANGLE_SENSOR = ADC(0)    # Potentiomètre
 buzzer = PWM(Pin(27))           # Buzzer
 BUTTON = Pin(18, Pin.IN)        # Bouton poussoir
 
+#new
+
+
 # === Définition des notes ===
 def DO(time, vol): buzzer.freq(1046); buzzer.duty_u16(int(vol)); sleep(time)
 def RE(time, vol): buzzer.freq(1175); buzzer.duty_u16(int(vol)); sleep(time)
